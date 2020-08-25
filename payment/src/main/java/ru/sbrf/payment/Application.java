@@ -2,7 +2,7 @@ package ru.sbrf.payment;
 
 import ru.sbrf.applicationMethods.Pay;
 
-public class Application implements Pay {
+public class Application extends User implements Pay {
     public void hostadress() {
         System.out.println(Pay.hAdress);
     }
@@ -25,6 +25,11 @@ public class Application implements Pay {
         this.ip();
         this.hostadress();
 
+    }
+
+    @Override
+    public void unification() {
+        super.unification();
     }
 }
 

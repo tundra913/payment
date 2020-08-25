@@ -46,4 +46,18 @@ public class User implements UserId, PhoneNumber, AccountNumber, Sum, Currency {
     public void currencyScanner() {
         System.out.println(Currency.title);
     }
+
+    public void unification() {
+        this.id();
+        this.idScanner();
+        this.phone();
+        this.phoneScanner();
+        this.account();
+        this.accountScanner();
+        this.sum();
+        this.sumScanner();
+        this.currency();
+        this.currencyScanner();
+    }
 }
+
